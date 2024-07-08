@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form tag</h1>
+    <form action="" method="" autocomplete="" enctype="">
+        <fieldset>
+            <legend>Login form</legend>
+        <label for="user name">Enter Username</label> 
+        <input type="text" name="user" id="user" placeholder="enter only a-z" pattern="[a-z]+" value="admin"  readonly required> 
+
+        <br><br>
+
+        <label for="pass">Enter Password</label>
+        <input type="password" name="pass" id="pass" minlength="5" maxlength="10">
+
+        <br> <br>
+
+        <input type="submit" value="login">
+
+        </fieldset>
+
+    </form>
+    <!--
+        form elements
+
+        fieldset
+        legend
+        input-> 15+ types
+                text, passwword, number, email, radio, checkbox, date, datetime, date time-local,week, month, time, color, search, range, url, file, image, hidden, submit, reset
+        label
+        select
+        text area
+    -->
+
+<!--     
+        form attributes
+        action ==> server url address, server path, action path
+        methods ==> get -> while sending data to server (it will be visible) 
+                    post -> while sending data to server (it hides)
+        autocomplete ==> to clear the form history (off)
+                         uses the previous history when it is (on)
+        enc type => application/x-www-form-urlencoded -> form data enc type
+                    multipart/form-data -> if form includes input type file
+                        -->
+    
+</body>
+</html>
